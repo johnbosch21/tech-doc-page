@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 3vmin;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+}
