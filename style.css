@@ -11,7 +11,115 @@
 
 body {
     min-height: 100vh;
+    display: flex;
 }
 
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
+h1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p, li {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.navbar {
+    width: 10rem;
+    height: 100vh;
+}
+
+    .fixed {
+        border-right: 0.01rem black solid;
+        position: fixed;
+        height: 100vh;
+        width: 10rem;
+    }
+
+    .title {
+        padding: 1rem;
+    }
+
+    .nav-ul {
+        list-style: none;
+        border-bottom: black solid 0.01rem ;
+    }
+
+    .nav-ul li {
+        border-top: black solid 0.01rem ;
+        padding: 1rem;
+    }
+
+    .nav-ul a {
+        text-decoration: none;
+        color: black;
+    }
+
+.main-doc {
+    flex: 1;
+    padding: 1rem;
+}
+
+.new-paragraph {
+    margin-bottom: 1rem;
+}
+
+.within-paragraph {
+    margin-bottom: 0.5rem;
+}
+
+.line-break {
+    display: block;
+}
+
+.line-break::before {
+    display: block;
+    margin-bottom: 0.3rem;
+    content: "";
+}
+
+.number {
+    list-style: decimal inside;
+    margin-left: 1rem;
+}
+
+.list {
+    list-style: inside;
+    margin-left: 1rem;
+}
+
+.scripture {
+    display: block;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 90%;
+    background-color: lightgray;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 200;
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.scripture::before {
+    display: block;
+    margin-bottom: 0.3rem;
+    content: "";
+}
+
+.verse {
+    font-style: normal;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 815px) and (orientation: portrait) {
 }
