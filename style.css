@@ -5,7 +5,7 @@
 }
 
 :root {
-    font-size: 3vmin;
+    font-size: calc(1em + 1vh);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -65,6 +65,7 @@ p, li {
 .main-doc {
     padding: 1rem;
     margin-left: 10rem;
+    max-width: 40rem;
 }
 
 .new-paragraph {
@@ -72,6 +73,11 @@ p, li {
 }
 
 .within-paragraph {
+    margin-bottom: 0.5rem;
+}
+
+.within-paragraph2 {
+    display: block;
     margin-bottom: 0.5rem;
 }
 
@@ -101,6 +107,7 @@ p, li {
     margin-left: 1rem;
     width: 90%;
     background-color: lightgray;
+    padding: 1rem;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 0.7rem;
     font-weight: 200;
@@ -136,14 +143,14 @@ p, li {
         left: 0;
         height: 20vh;
         width: 100%;
-        border: solid 0.2rem gray;
+        border: solid 0.2rem black;
     }
 
     .main-doc {
         margin-left: 0;
         height: 80vh;
         overflow-y: auto;
-        border: solid 0.2rem gray;
+        overflow-x: hidden;
     }
 
 }
