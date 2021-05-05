@@ -27,6 +27,8 @@ p, li {
 .navbar {
     border-right: 0.01rem black solid;
     position: fixed;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 10rem;
 }
@@ -42,23 +44,23 @@ p, li {
         overflow-x: hidden;
     }
 
-    .nav-ul li {
-        border-top: black solid 0.01rem ;
-        padding: 1rem;
-    }
+        .nav-ul li {
+            border-top: black solid 0.01rem ;
+            padding: 1rem;
+        }
 
-    .nav-ul li:last-child {
-        border-bottom: black solid 0.01rem ;
-    }
+        .nav-ul li:last-child {
+            border-bottom: black solid 0.01rem ;
+        }
 
-    .nav-link {
-        text-decoration: none;
-        color: black;
-    }
+        .nav-link {
+            text-decoration: none;
+            color: black;
+        }
 
-    .nav-link:hover {
-        text-decoration: underline;
-    }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
 
 .main-doc {
     padding: 1rem;
@@ -122,47 +124,24 @@ p, li {
 }
 
 @media only screen and (max-width: 815px) and (orientation: portrait) {
+    body {
+        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 
     .navbar {
-        background-color: white;
-        position: absolute;
-        top: 0;
-        width: 100%;
+        position: relative;
         height: 20vh;
-        border: 0.2rem gray solid;
-        text-align: center;
-    }
-
-    .title {
-        height: 30%;
-        border-bottom: black solid 0.01rem ;
-    }
-
-    .nav-ul {
-        height: 70%;
-    }
-
-    .nav-ul li:first-child {
-        border-top: 0px;
-    }
-
-    .nav-ul li:last-child {
-        border-bottom: 0px;
+        width: 100%;
+        border: solid 0.2rem gray;
     }
 
     .main-doc {
-        position: fixed;
-        top: 0;
-        left: 0%;
-        margin-top: 12rem;
         margin-left: 0;
         height: 80vh;
         overflow-y: auto;
-        overflow-x: hidden;
-        border-bottom: black solid 0.01rem ;
+        border: solid 0.2rem gray;
     }
-
-
-
 
 }
