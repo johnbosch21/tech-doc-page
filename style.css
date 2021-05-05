@@ -141,14 +141,14 @@ p, li {
         position: relative;
         top:0;
         left: 0;
-        height: 20vh;
+        height: 30vh;
         width: 100%;
         border: solid 0.2rem black;
     }
 
     .main-doc {
         margin-left: 0;
-        height: 80vh;
+        height: 70vh;
         overflow-y: auto;
         overflow-x: hidden;
     }
