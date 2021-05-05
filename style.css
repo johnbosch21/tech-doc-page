@@ -9,10 +9,6 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-body {
-    min-height: 100vh;
-}
-
 h1 {
     font-size: 0.9rem;
     font-weight: 400;
@@ -41,7 +37,6 @@ p, li {
 
     .nav-ul {
         list-style: none;
-        border-bottom: black solid 0.01rem ;
         height: 100%;
         overflow-y: auto;
         overflow-x: hidden;
@@ -52,9 +47,17 @@ p, li {
         padding: 1rem;
     }
 
+    .nav-ul li:last-child {
+        border-bottom: black solid 0.01rem ;
+    }
+
     .nav-link {
         text-decoration: none;
         color: black;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
     }
 
 .main-doc {
@@ -119,4 +122,46 @@ p, li {
 }
 
 @media only screen and (max-width: 815px) and (orientation: portrait) {
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 20vh;
+        border: 0.2rem gray solid;
+        text-align: center;
+    }
+
+    .title {
+        height: 30%;
+        border-bottom: black solid 0.01rem ;
+    }
+
+    .nav-ul {
+        height: 70%;
+    }
+
+    .nav-ul li:first-child {
+        border-top: 0px;
+    }
+
+    .nav-ul li:last-child {
+        border-bottom: 0px;
+    }
+
+    .main-doc {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        margin-top: 10rem;
+        margin-left: 0;
+        height: 80vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-bottom: black solid 0.01rem ;
+    }
+
+
+
+
 }
