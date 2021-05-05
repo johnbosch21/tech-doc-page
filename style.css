@@ -124,6 +124,7 @@ p, li {
 @media only screen and (max-width: 815px) and (orientation: portrait) {
 
     .navbar {
+        background-color: white;
         position: absolute;
         top: 0;
         width: 100%;
@@ -153,7 +154,7 @@ p, li {
         position: fixed;
         top: 0;
         left: 0%;
-        margin-top: 10rem;
+        margin-top: 12rem;
         margin-left: 0;
         height: 80vh;
         overflow-y: auto;
